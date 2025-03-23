@@ -1,0 +1,299 @@
+/* Toàn bộ trang web */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+/* Phần popup */
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-content {
+  background-color: white;
+  padding: 30px;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.popup-img {
+  width: 100px;
+  height: 100px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  color: #333;
+  cursor: pointer;
+}
+
+/* Header */
+header {
+  background-color: #f58301;
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+header nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+header nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 1.1em;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+  color: #f2d91f;
+}
+
+/* Banner */
+.banner {
+  width: 100%;
+  height: 300px;
+  background-color: #8a2be2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner-img {
+  width: 80%;
+  height: auto;
+}
+
+/* Phần thông tin 8/3 */
+.info {
+  padding: 30px;
+  background-color: #ffffff;
+  margin-top: 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+}
+
+.fade-in {
+  animation: fadeIn 2s ease-out;
+}
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+/* Biểu mẫu gửi cảm nghĩ */
+.feedback-form {
+  background-color: #ffffff;
+  padding: 30px;
+  margin-top: 40px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.feedback-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 1.1em;
+  color: #333;
+}
+
+.feedback-form input,
+.feedback-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1.1em;
+  transition: border-color 0.3s ease;
+}
+
+.feedback-form input:focus,
+.feedback-form textarea:focus {
+  border-color: #8a2be2;
+  outline: none;
+}
+
+.feedback-form button {
+  padding: 12px 25px;
+  background-color: #8a2be2;
+  color: white;
+  border: none;
+  font-size: 1.2em;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.feedback-form button:hover {
+  background-color: #7a1da1;
+}
+
+/* Nút gửi ẩn danh */
+#anonymousButton {
+  background-color: #ff1493;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 100%;
+  font-size: 1.1em;
+  transition: background-color 0.3s ease;
+}
+
+#anonymousButton:hover {
+  background-color: #d12e8b;
+}
+
+/* Bé AI trợ lý */
+.ai-assistant {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  cursor: pointer;
+}
+
+.ai-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Web quotes */
+.web-quotes {
+  padding: 30px;
+  background-color: #ffffff;
+  margin-top: 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  text-align: center;
+}
+
+.web-quotes .quote-links a {
+  display: inline-block;
+  margin: 10px;
+  text-decoration: none;
+  font-size: 1.2em;
+  color: #8a2be2;
+}
+
+.web-quotes .quote-links a:hover {
+  color: #7a1da1;
+}
+/* Phần CSS cho Video */
+.video-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.video-container {
+    display: inline-block;
+    margin: 10px;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+}
+
+.video-container:hover {
+    transform: scale(1.05); /* Phóng to nhẹ */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Hiệu ứng đổ bóng */
+}
+
+/* Thêm một số kiểu dáng cho các phần khác nếu cần */
+/* Phần CSS cho Các mục trong Khám Phá Thêm */
+.web-quotes {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.quote-links {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.quote-item {
+  position: relative;
+  width: 22%; /* Điều chỉnh kích thước của mỗi khung */
+  height: 350px; /* Đặt chiều cao khung lớn hơn */
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.quote-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.quote-image {
+  width: 100%;
+  height: 100%; /* Đảm bảo hình ảnh bao phủ toàn bộ khung */
+  object-fit: cover; /* Giúp hình ảnh không bị méo và đầy đủ */
+  display: block;
+  border-radius: 10px;
+  transition: opacity 0.3s ease;
+}
+
+.quote-item label {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: white;
+  font-size: 18px;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 5px;
+  border-radius: 5px;
+}
+
+/* Hiệu ứng rê chuột*/
+.quote-item:hover .quote-image {
+  opacity: 0.8;
+}
